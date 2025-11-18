@@ -1,0 +1,170 @@
+@charset "utf-8";
+*{
+    margin: 0; padding: 0;}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{max-width: 100%;}
+
+.madal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 2000;
+}
+.popup{position: fixed;
+    left: 300px;
+    top: 300px;
+    width: 300px;
+    padding: 30px;
+    color: #fff;
+}
+.popup-ctl
+
+html{
+    background-color: #fff;
+    color: #333;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: green;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.gnb a{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnb{
+    display: flex;
+    align-self: flex-start;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.gnb>li{
+    position: relative;
+}
+
+.gnb>li:hover>a{
+    background-color: #000;
+    color: #fff;
+}
+
+.gnb ul a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.gnb>li>ul{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.gnb:hover>li>ul{
+    max-height: 200px;
+}
+
+.gnb:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: pink;
+    width: 100%;
+    height: 0px;
+    z-index: -1;
+}
+
+.gnb:hover:after{
+    height: 170px;
+    transition: all 0.5s ease 0s;
+}
+
+.station{
+    height: 300px;
+    overflow: hidden;
+}
+
+.train{
+    width: 400%;
+    display: flex;}
+
+.train>li{
+    flex:1;
+}
+
+.contents{
+    height: 200px;
+    display: flex;
+}
+
+.contents section{
+    flex: 1;
+}
+
+.notice{
+    margin-top: 10px;
+}
+
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a{
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+}
