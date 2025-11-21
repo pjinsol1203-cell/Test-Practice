@@ -1,0 +1,190 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%;}
+ul,ol{list-style: none;}
+
+html{
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+}
+
+.popup{
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    z-index: 300;
+    display: none;
+}
+
+.popup.on{
+    display: block;
+}
+
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap{
+    width: 1000px;
+    display: flex;
+}
+
+header{
+    width: 200px;
+}
+
+main{
+    width: 800px;
+}
+
+.gnb a{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnb ul a{
+    height: 40px;
+}
+
+.gnb{
+    margin: 0 auto;
+}
+
+.gnb ul{
+    border: 1px solid red;
+    position: absolute;
+}
+
+
+.gnb li{
+    position: absolute;
+    left: 180px;
+    top: -10ox;
+    z-index: 10;
+    background-color: #fff;
+    max-width: 0ox;
+    overflow: hidden;
+    transition: 0s 0.6 ease 0s
+}
+.station{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.train{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.train li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+
+.train li.on{
+    opacity: 1;
+}
+
+.content{
+    height: 200px;
+    display: flex;
+}
+
+.content>section{
+    flex: 1;
+}
+
+.tabs{
+    display: flex;
+    gap: 10px;
+}
+
+.tabs a{
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.tabs a.on{
+    background-color: #000;
+    color: #fff;
+}
+
+.tab-desc{
+    font-size: 12px;
+}
+
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.tab-desc ul{
+    display: none;
+}
+
+.notice.on{
+    display: block;
+}
+
+.gallery.on{
+    display: flex;
+}
+
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a{
+    padding: 10px;
+    background-color: #151746;
+    color: #fff;
+}
+
+.direct{
+    background: url(../img/direct.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direct a{
+    padding: 10px;
+    background-color: #151746;
+    color: #fff;
+}
+
+footer{
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+}
+
+.fmenu{
+    display: flex;
+    gap: 10px;
+}
